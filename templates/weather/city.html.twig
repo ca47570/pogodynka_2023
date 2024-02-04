@@ -10,7 +10,7 @@
     <h1>Weather in {{ location.city }}, {{ location.country }}</h1>
 
     <ul>
-        {% for measurement in measurements %}
+        {% for measurement in measurement %}
             <li>{{ measurement.date|date('d.m.Y') }}: {{ measurement.celsius }}&deg;C</li>
         {% endfor %}
     </ul>
